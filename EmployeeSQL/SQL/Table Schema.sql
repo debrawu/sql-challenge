@@ -78,9 +78,10 @@ CREATE TABLE titles (
 
 select * from titles
 
--- ADDING CONSTRAINTS because i forgot primary keys & foreign keys 
+-- renaming columns because i was working too quickly and didn't see the actual table data  
 ALTER TABLE titles
 RENAME COLUMN dept_no TO title_id
 
+-- adding primary keys because i was being lazy in the beginning 
 ALTER TABLE titles
 ADD PRIMARY KEY (title_id)
